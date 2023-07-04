@@ -1,0 +1,17 @@
+
+ .flex{
+    border: solid 2px #ebebeb;
+    width: 90%;
+    padding: 15px;
+    margin:15px ;
+ }
+
+@media (min-width:768px){
+   .flex{
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   width: 95%;
+}
+
+}
+
+ 
