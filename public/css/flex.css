@@ -2,9 +2,9 @@
  .flex{
     border: solid 2px #ebebeb;
     width: 90%;
+    margin: 15px;
     padding: 15px;
-    margin:15px ;
- }
+  }
 
 @media (min-width:768px){
    .flex{

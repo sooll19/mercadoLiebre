@@ -125,5 +125,8 @@ font-size: 30px;
 
 }
 @media (min-width:1024px){
-
+.main-box img{
+  width: 50%;
+  height: 50%;
+}
 }
