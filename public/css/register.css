@@ -1,0 +1,108 @@
+/*estructura*/
+.main__formulario{
+    width: 80%;
+ margin: 10%;
+ background-color: var(--colorGrisClaro );
+}
+.formulario label{
+    font-size: 12px;
+margin-bottom: 20px;
+font-family: var(--tipografiaGeneral);
+text-decoration: none;
+margin-left: 10px;
+
+}
+.formulario input{
+    border-radius: 5px;
+border: 2px solid rgb(239, 230, 230);
+margin: 10px;
+    
+}
+.formulario h3{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+/*principal*/
+.principal{
+
+margin-bottom: 20px;
+}
+
+/*generales*/
+.generales{
+margin-bottom: 20px;
+    }
+
+
+    /*contraseñas*/
+    .contraseñas{
+        margin-bottom: 20px;
+    }
+    /*botones*/
+    .enviar{
+        width: 50%;
+        margin-bottom: 10px;
+     
+    }
+    .reset{
+        width: 50%;
+        margin-bottom: 10px;
+       
+    }
+
+    @media (min-width:768px) {
+       /*formulario*/
+        .main__formulario{
+            width: 70%;
+         margin: 10%;
+       }
+       .formulario h3{
+            font-size: 40px;
+        }
+      .formulario label{
+        font-size: 25px;
+        margin-left: 50px;
+    }
+    .formulario input{
+        font-size: 25px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+      
+    }
+      /*principal*/
+      .principal input{
+        width: 80%;
+    }
+    
+       /*generales*/
+       .generales{
+        margin-bottom: 30px;
+       }
+       
+     /*contraseña*/
+     .contraseñas input{
+        width: 80%;
+     }
+     
+    
+          
+         /*botones*/   
+            .enviar input{
+         
+                border: 2px solid gray;
+               }
+            .reset input{
+            
+                border: 2px solid gray;
+               
+            }        
+    }
+
+    @media (min-width:1024px) {
+        /*formulario*/
+         .main__formulario{
+             width: 80%;
+       
+        }
+    }

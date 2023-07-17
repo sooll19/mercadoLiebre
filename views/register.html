@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCADO LIEBRE</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/47ad367b33.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="home">
+    <header class="home__header">
+        <div class="logo">
+            <a href="/"><img src="/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+            >
+        </div>
+        <div class="barra-busqueda">
+            <form action="menu">
+                <input type="text" placeholder="buscar productos,marcas">
+                <button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <a class="cuotas" href=""><i class="fa-solid fa-hand-holding-dollar"> Compra en cuotas y sin tarjeta de
+                credito</i></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta</a><i class="fa-sharp fa-regular fa-address-card"></i></li>
+                <li><a href="login">Ingresá</a><i class="fa-sharp fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+            <nav class="menu_logo">
+                <button><i class="fa-solid fa-bars"></i></button>
+            </nav>
+        </nav>
+    </header>
+    <main class="main__formulario">
+        <div class="formulario">
+            <h3>Registrate</h3>
+            <hr>
+            <form>
+                <div class="principal">
+                    <div class="nombre">
+                        <label for="name">Nombre y Apellido:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="usuario">
+                        <label for="surname">Nombre de usuari@:</label>
+                        <input type="text" id="surname" name="surname">
+                    </div>
+                    <div class="fechaDeNacimiento">
+                        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                    </div>
+                    <div class="domicilio">
+                        <label for="domicilio">Domicilio:</label>
+                        <input type="text" id="domicilio" name="domicilio">
+                    </div>
+                </div>
+
+                <div class="generales">
+                    <div class="perfilUsuario">
+                        <label for="">Perfil del Usuario</label>
+                        <div>
+                            <input type="radio" name="perfil" value="comprador">
+                            <label for="comprador">
+                                Comprador
+                            </label>
+                        </div>
+                        <input type="radio" name="perfil" value="vendedor">
+                        <label for="vendedor">
+                            Vendedor
+                        </label>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Categorias de Interés</label>
+                            <div>
+                                <input type="checkbox" name="interes" value="electro">
+                                <label for="electro">
+                                    Electro
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interes" value="moda">
+                                <label for="moda">
+                                    Moda
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interes" value="hogar">
+                                <label for="hogar">
+                                    Hogar
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interes" value="juguetería">
+                                <label for="juguetería">
+                                    Juguetería
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="interes" value="vida sana">
+                                <label for="vida sana">
+                                    Vida Sana
+                                </label>
+                            </div>
+                            <div>
+                                <label for="">Foto de perfil</label>
+                                <input type="file" name="imagenDePerfil" id="imagenDePerfil" multiple
+                                    accept=".jpg, .png">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="contraseñas">
+                        <div>
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div>
+                            <label for="password2">Confirmar contraseña:</label>
+                            <input type="password" id="password2" name="password2">
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <div class="enviar">
+                            <input type="submit" value="enviar" id="enviar" name="enviar">
+                        </div>
+                        <div class="reset">
+                            <input type="reset" value="borrar" id="borrar" name="borrar">
+                        </div>
+                    </div>
+
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

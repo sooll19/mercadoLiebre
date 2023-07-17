@@ -1,49 +1,93 @@
-.home header img.logo-mp {
-    width: 60%;
-    padding:10px
+/*body*/
+
+/*header*/
+.home__header{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+
+}
+.logo {
+  width: 50%;
+  margin-top: 20px;
+
+   
    }
-   .home__header{
-      width: 100%;
-    padding: 5% 0;
-    
+   .barra-busqueda {
+  width: 50%;
+  margin-top: 20px;
 
    }
+   .barra-busqueda input{
+    border-radius: 2px;
+    width: 80%;
+   }
+
+  
 .home__header a i{
     padding: 10px 10px;
     color: black;
     font-size: 10px;
-
-    
-  
-  
- }
+    margin: 20px 0;
+}
+/*menu*/
  .menu_logo button{
-   margin-left: 40%;
+margin-top: 10%;
     background-color: var(--colorCeleste);
     color: white;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 130px;
+ 
+
    }
-   
+  
+   /*banner*/
    .home__main__banner img{
     width: 100%;
     height: 100%;
 
    }
+/*productos*/
 
-  .main-box img{
+.home__main__article{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+  .home__main__article img{
    width: 100%;
    height: 100%;
+ 
   }
-  .box button{
-  border: solid 2px var(--colorVerde);
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   color: var(--colorVerde);
-
-  }
+.main__section{
+  display:flex;
+}
+/*volver*/
+.volver{
+  font-size: 20px;
+ padding-bottom: 50px;
+}
+  /*camión*/
+  .box i{
+  
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+   
+   }
+   /*footer*/
 .home__footer{
  text-align: center;
  font-size: 20px;
@@ -64,39 +108,87 @@ margin-bottom: 10px;
 }
 
 
+
+
+
+
+
+
+
+
 @media (min-width:768px){
-  /*header*/
-  
-   .menu li{
-display: block;
-font-size: 30px; 
- }
+ /*header*/
 
- .menu_logo button{
- display: none;
-  }
-
-
-  .home__header a i{
-    padding: 50px 50px;
-    margin-left: 50px;
-    color: black;
-    font-size: 20px;
-    }
+.menu{
+  display:flex;
+  justify-content: space-between;
+  flex-grow: 2;}
+.barra-busqueda input{
+  width: 80%;
+  height: 40px;
+  margin-top: 20px;
+}
+.menu a{
+  font-size: 20px;
+}
+  .menu_logo button{
+    display: none;
+     }
    
-  /*main*/
-  h3{
-    font-size: 30px; 
-    font-weight: lighter;
-  }
-   .box p{
-     display: inline;
-     font-size: 30px;
+   
+     .home__header a i{
+   
+     text-decoration:none;
+       font-size: 15px;
+       }
+
+     
+
+  /*section*/
+ 
+ .precio h3{
+  font-size: 25px;
+ }
+ .precio p{
+  display:inline;
+  font-size: 25px;
+}
+.descuento h4{
+  font-size: 25px;
+}
+/*volver*/
+.volver{
+  display: none;
+}
+/*camion*/
+  .box i{
+    position: absolute;
+ width: 40px;
+ height: 30px;
+bottom: 80px;
+font-size: 20px;
+    
+
+
+ 
+   
    }
-  
-   h4{
-     font-size: 30px;
-      }
+   /*cajas*/
+.home__main-producto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+.home__main__article{
+  position: relative;
+box-shadow: 0px 10px 40px rgb(100, 100, 100);
+width: 45%;
+height: 30%;
+margin: 10px;
+}
+
+
 /*footer*/
 
   
@@ -117,16 +209,35 @@ font-size: 30px;
 }
 
 
-   h5{
-    font-size: 25px;
-    color: black;
-    margin-top: 50px;
-  }
+
 
 }
+
+
+
 @media (min-width:1024px){
-.main-box img{
-  width: 50%;
-  height: 50%;
+  .menu a{
+
+  font-size: 25px;
+margin: 10px;}
+.home__main__article{
+width: 20%;
+height: 30%;
+margin: 20px;
+}
+.home__main-producto{
+  
+  justify-content:flex-start;
+ 
+}
+.precio h3{
+  font-size: 20px;
+ }
+ .precio p{
+
+  font-size: 19px;
+}
+.descuento h4{
+  font-size: 15px;
 }
 }
