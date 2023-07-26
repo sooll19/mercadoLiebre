@@ -56,16 +56,24 @@ margin-top: 10%;
   display: flex;
   flex-wrap: wrap;
   position: relative;
-
 }
+.home__main__article:hover{
+  box-shadow: 0px 10px 40px rgb(100, 100, 100);
+}
+
   .home__main__article img{
    width: 100%;
    height: 100%;
  
   }
-.main__section{
-  display:flex;
+
+.main__section p{
+  visibility: hidden;
+ }
+.main__section:hover p{
+ visibility: visible;
 }
+
 /*volver*/
 .volver{
   font-size: 20px;
@@ -87,6 +95,10 @@ margin-top: 10%;
     bottom: 40px;
    
    }
+   .box:hover i{
+transform: rotate(-90deg);
+transition: transform 0.5s;
+   }
    /*footer*/
 .home__footer{
  text-align: center;
@@ -101,6 +113,10 @@ font-size:2em;
 margin-bottom: 10px;
  padding-top: 50px;
 }
+.home__footer i:hover{
+  color:  #0022AA;
+ 
+ }
 
 .home__footer h6{
   font-size: 20px;
@@ -167,12 +183,8 @@ margin-bottom: 10px;
  height: 30px;
 bottom: 80px;
 font-size: 20px;
-    
-
-
- 
-   
-   }
+    }
+  
    /*cajas*/
 .home__main-producto{
   display: flex;
@@ -182,12 +194,15 @@ font-size: 20px;
 }
 .home__main__article{
   position: relative;
-box-shadow: 0px 10px 40px rgb(100, 100, 100);
+
 width: 45%;
 height: 30%;
 margin: 10px;
 }
 
+.main__section p{
+  visibility: visible;
+ }
 
 /*footer*/
 
@@ -217,9 +232,9 @@ margin: 10px;
 
 @media (min-width:1024px){
   .menu a{
-
-  font-size: 25px;
-margin: 10px;}
+font-size: 25px;
+margin: 10px;
+  }
 .home__main__article{
 width: 20%;
 height: 30%;
@@ -240,4 +255,18 @@ margin: 20px;
 .descuento h4{
   font-size: 15px;
 }
+.general_footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home__footer h5{
+margin-left: 40%;
+}
+.article_footer{
+  width: 30%;
+}
+.main__section p{
+  visibility: visible;
+ }
 }

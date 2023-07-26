@@ -45,6 +45,9 @@ margin-bottom: 20px;
         margin-bottom: 10px;
      
     }
+    .enviar input:hover{
+        background-color:  #0022AA;
+        }
     .reset{
         width: 50%;
         margin-bottom: 10px;
